@@ -28,7 +28,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(j|t)sx$/,
+        test: /.(j|t)sx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -40,7 +40,7 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /.scss$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
